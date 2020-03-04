@@ -6,43 +6,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/tailwind.min.css">
-
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 </head>
 
 <body>
-    <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg mb-3 shadow-lg">
+    <nav class="relative flex flex-wrap justify-between px-2 py-3 navbar-expand-lg mb-3 shadow-lg">
         <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
-            <div class="w-full relative flex justify-between md:w-auto  px-4 md:static">
+            <div class="w-full relative flex justify-between md:w-auto px-4 md:static">
                 <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
                     href="#pablo">
                     Portfolio
                 </a>
             </div>
-            <div class="md:flex flex-grow items-center">
-                <ul class="flex flex-col md:flex-row list-none ml-auto">
-                    <li class="nav-item">
-                        <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75"
-                            href="#aboutme">
+            <div class="md:flex flex-grow">
+                <ul class="flex flex-col md:flex-row list-none ml-auto items-end">
+                    <li class="nav-item display">
+                        <a class="px-3 py-2 text-xs uppercase font-bold hover:opacity-75" href="#aboutme">
                             About Me
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75"
-                            href="#skills">
+                        <a class="px-3 py-2 text-xs uppercase font-bold hover:opacity-75" href="#skills">
                             Skills
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75"
-                            href="#projects">
+                        <a class="px-3 py-2 text-xs uppercase font-bold hover:opacity-75" href="#projects">
                             Projects
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75"
-                            href="#contact">
+                        <a class="px-3 py-2 text-xs uppercase font-bold hover:opacity-75" href="#contact">
                             Contact
                         </a>
                     </li>
@@ -50,12 +46,78 @@
             </div>
         </div>
     </nav>
-    <div style="background-image: url('portfoliodesk.jpg');">
-        <div class="container-lg">
-            <h1 class="text-5xl text-center underline uppercase">Lydia Joynes</h1>
-            <p class="text-2xl text-center">Junior Software Engineer</p>
+    <section class="container-flex">
+        <div style="background-image: url('portfoliodesk.jpg');">
+            <div class="py-40 text-center w-full h-full object-fit">
+                <h1 class="text-5xl text-center underline uppercase">Lydia Joynes</h1>
+                <p class="text-2xl text-center">Junior Software Engineer</p>
+            </div>
         </div>
-    </div>
+    </section>
+    <section class="py-24" id="aboutme">
+        <div class="container text-center mx-auto">
+            <h2 class="text-3xl font-bold">About Me</h2>
+        </div>
+    </section>
+    <section class="py-16" id="skills">
+        <div class="container text-center mx-auto">
+            <h2 class="text-3xl font-bold my-4">Skills</h2>
+            <ul class="flex w-full">
+                <li class="flex-1 text-6xl"><i class="fab fa-html5"></i></li>
+                <li class="flex-1 text-6xl"><i class="fab fa-css3"></i></li>
+                <li class="flex-1 text-6xl"><i class="fab fa-js"></i></li>
+                <!-- <li class="flex-1 text-6xl"><i class="fas fa-lambda"></i></li> -->
+            </ul>
+            <ul class="flex w-full">
+                <li class="flex-1 text-6xl"><i class="fab fa-react"></i></li>
+                <li class="flex-1 text-6xl"><i class="fab fa-node"></i></li>
+                <li class="flex-1 text-6xl"><i class="fab fa-aws"></i></li>
+                <li class="flex-1 text-6xl"><i class="fab fa-python"></i></li>
+            </ul>
+        </div>
+        <div class="flex flex-wrap justify-center">
+            <div class="w-6/12 sm:w-4/12 px-4">
+            </div>
+        </div>
+    </section>
+    <section class="py-24" id="projects">
+        <div class="container text-center mx-auto">
+            <h2 class="text-3xl font-bold">Projects</h2>
+            <div class="flex flex-wrap mt-5">
+                <div class="w-1/3 p-2">
+                    <img src="cat.jpg" alt="Meowchester" />
+                </div>
+                <div class="w-1/3 p-2">
+                    <img src="fooder.jpg" alt="Fooder" />
+                </div>
+                <div class="w-1/3 p-2">
+                    <img src="blog.jpg" alt="Blog" />
+                </div>
+                <div class="w-1/3 p-2">
+                    <img src="techreturners.png" alt="TechReturners" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24" id="contact">
+        <div class="container text-center mx-auto">
+            <h2 class="text-3xl font-bold">Contact</h2>
+            <div>
+                <div class="mb-3 pt-0">
+                    <input type="text" placeholder="Github: lydiabrmc"
+                        class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full" />
+                </div>
+                <div class="mb-3 pt-0">
+                    <input type="text" placeholder="LinkedIn: "
+                        class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full" />
+                </div>
+                <div class="mb-3 pt-0">
+                    <input type="text" placeholder="Email: lydiajoynes@gmail.com"
+                        class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full" />
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 
