@@ -7,6 +7,9 @@ body nav {
     background-color: #f9f1f1;
     color: #ACA18C;
     font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
 
 }
 .intro {
@@ -15,4 +18,34 @@ body nav {
 }
 html {
     scroll-behavior: smooth;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.welcome-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.welcome-img img {
+    width:100%;
+    height:100%;
+    object-position: bottom;
+    object-fit: cover;
+}
+
+.welcome-txt {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    position: relative;
+    z-index: 1;
 }
