@@ -49,3 +49,24 @@ html {
     position: relative;
     z-index: 1;
 }
+
+.aboutme-img {
+    width: 50%;
+    height: 50%;
+    z-index: 0;
+    padding-left: 40px;
+}
+.aboutme-txt {
+    text-align: left;
+    width: 50%;
+    float: right;
+    padding-right: 100px;
+    border: solid;
+}
+
+
+
+
+
+
+
