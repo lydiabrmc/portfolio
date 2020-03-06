@@ -3,6 +3,7 @@ body {
     color: #ACA18C;
     font-family: 'Montserrat', sans-serif;
 }
+
 body nav {
     background-color: #f9f1f1;
     color: #ACA18C;
@@ -10,12 +11,13 @@ body nav {
     position: fixed;
     z-index: 99;
     width: 100%;
-
 }
+
 .intro {
     color: #ACA18C;
     font-family: 'Montserrat', sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -49,3 +51,32 @@ html {
     position: relative;
     z-index: 1;
 }
+
+.aboutme {
+    text-align: center;
+    margin-top: 40px;
+    text-emphasis: bold;
+}
+
+.aboutme-img {
+    width:20%;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+}
+
+.aboutme-txt {
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    float: right;
+}
+
+
+
+
+
+
+
+
